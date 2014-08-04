@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TEAViewController : UIViewController
+@interface TEAViewController : UIViewController <UITextViewDelegate>
+
+@property (strong, nonatomic) IBOutlet UITextView *textView;
+@property (strong, nonatomic) IBOutlet UIDatePicker *datePicker;
+- (IBAction)processDateButtonPressed:(UIButton *)sender;
 
 @end
